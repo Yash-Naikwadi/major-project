@@ -1,0 +1,18 @@
+@"
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Dependencies
+node_modules/
+venv/
+.venv/
+__pycache__/
+
+# Generated databases and local data
+**/medichain_chroma_db/
+"@ | Out-File -FilePath .gitignore -Encoding utf8
